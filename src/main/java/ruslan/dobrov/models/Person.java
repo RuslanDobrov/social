@@ -1,7 +1,6 @@
 package ruslan.dobrov.models;
 
 import lombok.*;
-
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -16,7 +15,6 @@ import java.util.Set;
 @Entity
 @Table(name = "Person_task3")
 public class Person {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -24,8 +22,6 @@ public class Person {
     @NonNull
     @Column(name = "username")
     private String username;
-    @NonNull
-    private String password;
 
     @NonNull
     @Column(name = "email")
